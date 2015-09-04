@@ -1,7 +1,7 @@
 .. _dnx-overview:
 
-DNX Overview
-====================================
+DNX 소개
+========
 
 By `Daniel Roth`_
 
@@ -10,13 +10,19 @@ What is the .NET Execution Environment?
 
 The .NET Execution Environment (DNX) is a software development kit (SDK) and runtime environment that has everything you need to build and run .NET applications for Windows, Mac and Linux. It provides a host process, CLR hosting logic and managed entry point discovery.  DNX was built for running cross-platform ASP.NET Web applications, but it can run other types of .NET applications, too, such as cross-platform console apps.
 
+닷넷 실행 환경(DNX - .NET Execution Environment)은 소프트웨어 개발 도구(SDK - Software Development Kit)이면서 윈도우, 맥, 리눅스에서 운영할 닷넷 애플리케이션을 작성하는데 필요한 모든 것을 제공하는 런타임이다. DNX는 호스트 프로세스, CLR을 호스팅하는 로직을 갖고 있고 호스팅하는 애플리케이션의 진입점을 찾을 수 있다. DNX는 크로스플랫폼에서 동작하는 ASP.NET 웹 애플리케이션을 위해 작성되었지만 또한 콘솔 앱과 같은 다른 종류의 닷넷 애플리케이션들을 운영할 수도 있다. 
+
 Why build DNX?
 --------------
 
 **Cross-platform .NET development** DNX provides a consistent development and execution environment across multiple platforms (Windows, Mac and Linux) and across different .NET flavors (.NET Framework, .NET Core and Mono).
 With DNX you can develop your application on one platform and run it on a different platform as long as you have a compatible DNX installed on that platform. You can also contribute to DNX projects using your development platform and tools of choice.
 
+**크로스 플랫폼 닷넷 개발** DNX는 윈도우, 맥, 리눅스를 아우르는 크로스플랫폼을 지원하면서 닷넷 프레임워크, 닷넷 코어, Mono를 아우르는 선택적인 개발 환경을 수용할 수 있는 런타임으로써 일관적인 개발을 가능하게 해준다. DNX의 존재 때문에 맥에서 애플리케이션을 개발하고 리눅스에서 운영할 수 있게 되었다. 물론, 개발과 운영, 두 개의 플랫폼은 서로 호환 가능한 DNX가 설치되어 있어야 할 것이다. 또한, 여러분의 개발 플랫폼과 개발 툴을 DNX 프로젝트에 기여할 수도 있다.  
+
 **Build for .NET Core** DNX dramatically simplifies the work needed to develop cross-platform applications using .NET Core. It takes care of hosting the CLR, handling dependencies and bootstrapping your application. You can easily define projects and solutions using a lightweight JSON format (*project.json*), build your projects and publish them for distribution.
+
+**닷넷 코어용 빌드** 
 
 **Package ecosystem** Package managers have completely changed the face of modern software development and DNX makes it easy to create and consume packages. DNX provides tools for installing, creating and managing NuGet packages. DNX projects simplify building NuGet packages by cross-compiling for multiple target frameworks and can output NuGet packages directly. You can reference NuGet packages directly from your projects and transitive dependencies are handled for you. You can also build and install development tools as packages for your project and globally on a machine.
 
